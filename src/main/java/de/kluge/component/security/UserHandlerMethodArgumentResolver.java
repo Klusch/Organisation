@@ -1,4 +1,4 @@
-package de.kluge.security;
+package de.kluge.component.security;
 
 import org.springframework.core.MethodParameter;
 import org.springframework.security.core.Authentication;
@@ -8,7 +8,7 @@ import org.springframework.web.context.request.NativeWebRequest;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.method.support.ModelAndViewContainer;
 
-import de.kluge.model.User;
+import de.kluge.entities.User;
 
 @Component
 public class UserHandlerMethodArgumentResolver implements HandlerMethodArgumentResolver {

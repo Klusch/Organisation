@@ -1,4 +1,4 @@
-package de.kluge.security;
+package de.kluge.component.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -10,8 +10,8 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
-import de.kluge.model.User;
-import de.kluge.model.repository.UserRepository;
+import de.kluge.entities.User;
+import de.kluge.model.repositories.UserRepository;
 
 @Configuration
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
