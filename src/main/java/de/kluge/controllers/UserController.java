@@ -1,4 +1,4 @@
-package de.kluge.controller;
+package de.kluge.controllers;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import de.kluge.model.User;
-import de.kluge.model.repository.UserRepository;
+import de.kluge.entities.User;
+import de.kluge.model.repositories.UserRepository;
 
 @Controller
 public class UserController {

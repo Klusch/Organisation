@@ -1,4 +1,4 @@
-package de.kluge.model.repository;
+package de.kluge.model.repositories;
 
 import java.util.List;
 
@@ -6,7 +6,7 @@ import javax.transaction.Transactional;
 
 import org.springframework.data.repository.CrudRepository;
 
-import de.kluge.model.Project;
+import de.kluge.entities.Project;
 
 @Transactional
 public interface ProjectRepository extends CrudRepository<Project, Long>, ProjectRepositoryCustom {

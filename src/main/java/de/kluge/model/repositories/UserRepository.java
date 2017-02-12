@@ -1,10 +1,10 @@
-package de.kluge.model.repository;
+package de.kluge.model.repositories;
 
 import javax.transaction.Transactional;
 
 import org.springframework.data.repository.CrudRepository;
 
-import de.kluge.model.User;
+import de.kluge.entities.User;
 
 @Transactional
 public interface UserRepository extends CrudRepository<User, String> {

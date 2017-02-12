@@ -1,4 +1,4 @@
-package de.kluge.model.repository;
+package de.kluge.model.repositories;
 
 public interface ProjectRepositoryCustom {
 

@@ -1,4 +1,4 @@
-package de.kluge.controller;
+package de.kluge.controllers;
 
 import java.io.IOException;
 import java.util.stream.Collectors;

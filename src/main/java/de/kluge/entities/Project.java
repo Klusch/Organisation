@@ -1,4 +1,4 @@
-package de.kluge.model;
+package de.kluge.entities;
 
 import java.util.Collection;
 

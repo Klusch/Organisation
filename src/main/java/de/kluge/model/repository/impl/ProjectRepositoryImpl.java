@@ -7,8 +7,8 @@ import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import de.kluge.model.repository.ProjectRepository;
-import de.kluge.model.repository.ProjectRepositoryCustom;
+import de.kluge.model.repositories.ProjectRepository;
+import de.kluge.model.repositories.ProjectRepositoryCustom;
 
 public class ProjectRepositoryImpl implements ProjectRepositoryCustom {
 
