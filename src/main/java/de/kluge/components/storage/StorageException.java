@@ -1,4 +1,4 @@
-package de.kluge.component.storage;
+package de.kluge.components.storage;
 
 public class StorageException extends RuntimeException {
 

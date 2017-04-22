@@ -22,8 +22,8 @@ import org.springframework.mock.web.MockMultipartFile;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
-import de.kluge.component.storage.StorageFileNotFoundException;
-import de.kluge.component.storage.StorageService;
+import de.kluge.components.storage.StorageFileNotFoundException;
+import de.kluge.components.storage.StorageService;
 
 @RunWith(SpringRunner.class)
 @AutoConfigureMockMvc

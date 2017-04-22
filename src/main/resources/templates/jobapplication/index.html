@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="bootstrap">
+	
+<head lang="de">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" />
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+</head>
+
+<body>
+	<div class="container">
+		<h1 layout:fragment="header">Bewerbungen</h1>
+		<div layout:fragment="content">
+
+			<section class="panel panel-default">
+
+				<div class="panel-heading">2017</div>
+
+				<table class="table table-bordered table-striped table-hover">
+					<thead>
+						<tr>
+							<th th:each="head : ${headings}" th:text="${head}"></th>
+						</tr>
+					</thead>
+					<tbody>
+<!-- 
+						<tr th:each="fail : ${failInstallations}">
+							<td><a href="Placeholder"
+								th:href="@{'/HsmInstallation/view-detail?hsmId=' + ${fail.hsmId}}"
+								th:text="${fail.hsmId}">Placeholder</a></td>
+							<td th:text="${fail.serverTyp}"></td>
+							<td th:text="${fail.numberSubsystems}"></td>
+							<td th:text="${fail.swVersion}"></td>
+							<td th:text="${fail.owner}"></td>
+							<td th:text="${fail.created}"></td>
+							<td><a href="#" 
+								th:href="@{'/HsmInstallation/delete?id=' + ${fail.id}}"><span
+									class="glyphicon glyphicon-trash" /></a></td>
+						</tr>
+ -->
+					</tbody>
+				</table>
+
+			</section>
+
+			<section class="panel panel-default">
+
+				<div class="panel-heading">2016</div>
+				<table class="table table-bordered table-striped table-hover">
+					<thead>
+						<tr>
+							<th th:each="head, i : ${headings}" th:text="${head}"></th>
+						</tr>
+					</thead>
+
+					<tbody>
+
+						<tr th:each="job : ${jobs}">
+<!-- 							<td><a href="Placeholder" -->
+<!-- 								th:href="@{'/HsmInstallation/view-detail?hsmId=' + ${success.hsmId}}" -->
+<!-- 								th:text="${success.hsmId}">Placeholder</a></td> -->
+							<td th:text="${job.jobTitle}"></td>
+							<td th:text="${job.runTill}"></td>
+							<td th:text="${job.reference}"></td>
+							<td th:text="${job.location}"></td>
+							<td th:text="${job.state}"></td>
+						</tr>
+
+					</tbody>
+
+				</table>
+			</section>
+		</div>
+	</div>
+
+</body>
+
+</html>

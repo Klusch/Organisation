@@ -19,8 +19,8 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.method.annotation.MvcUriComponentsBuilder;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import de.kluge.component.storage.StorageFileNotFoundException;
-import de.kluge.component.storage.StorageService;
+import de.kluge.components.storage.StorageFileNotFoundException;
+import de.kluge.components.storage.StorageService;
 
 @Controller
 public class FileUploadController {

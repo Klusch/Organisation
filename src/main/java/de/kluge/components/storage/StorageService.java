@@ -1,4 +1,4 @@
-package de.kluge.component.storage;
+package de.kluge.components.storage;
 
 import org.springframework.core.io.Resource;
 import org.springframework.web.multipart.MultipartFile;

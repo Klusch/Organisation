@@ -1,4 +1,4 @@
-package de.kluge.component.security;
+package de.kluge.components.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

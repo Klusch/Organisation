@@ -1,4 +1,4 @@
-package de.kluge.model.repository.impl;
+package de.kluge.model.repositories.impl;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;

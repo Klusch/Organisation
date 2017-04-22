@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 
-import de.kluge.component.storage.StorageProperties;
-import de.kluge.component.storage.StorageService;
+import de.kluge.components.storage.StorageProperties;
+import de.kluge.components.storage.StorageService;
 
 @SpringBootApplication
 @EnableConfigurationProperties(StorageProperties.class)

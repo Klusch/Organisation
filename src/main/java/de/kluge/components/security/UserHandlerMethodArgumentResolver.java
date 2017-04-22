@@ -1,4 +1,4 @@
-package de.kluge.component.security;
+package de.kluge.components.security;
 
 import org.springframework.core.MethodParameter;
 import org.springframework.security.core.Authentication;
