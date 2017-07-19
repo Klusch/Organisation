@@ -2,10 +2,7 @@ package de.kluge.controller;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.Collection;
-import java.util.Date;
 
 import org.junit.Before;
 import org.junit.Test;

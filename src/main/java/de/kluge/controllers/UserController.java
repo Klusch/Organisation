@@ -25,8 +25,7 @@ public class UserController {
 		String userId = "";
 		try {
 			User user = new User(username, password);
-			userDao.save(user);
-			userId = String.valueOf(user.getId());
+			user = userDao.save(user);
 		} catch (Exception ex) {
 			return "Error creating the user: " + ex.toString();
 		}
@@ -91,7 +90,7 @@ public class UserController {
 			User user = userDao.findOne(username);
 			user.setUsername(username);
 			user.setPassword(password);
-			userDao.save(user);
+			user = userDao.save(user);  // NOSONAR
 		} catch (Exception ex) {
 			return "Error updating the user: " + ex.toString();
 		}
